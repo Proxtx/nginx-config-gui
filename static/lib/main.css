@@ -1,0 +1,79 @@
+:root {
+  --accentColor: #009639;
+
+  --darkGrey: #565656;
+  --grey: #c2c2c2;
+  --lightGrey: #d9d9d9;
+
+  --text-color: black;
+  --titleColor: white;
+
+  --headerHeight: 120px;
+  --borderRadius: 6px;
+}
+
+body {
+  margin: 0;
+  color: var(--text-color);
+  font-family: sans-serif;
+  background-color: var(--lightGrey);
+}
+
+#header {
+  width: 100%;
+  height: var(--headerHeight);
+  background-color: var(--darkGrey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#titleWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#title1 {
+  color: var(--accentColor);
+}
+
+#title2 {
+  color: var(--titleColor);
+}
+
+.contentWrap {
+  padding: 20px;
+  width: 100%;
+  height: calc(100% - var(--headerHeight));
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.table {
+  background-color: var(--grey);
+  border-radius: var(--borderRadius);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.tableEntry {
+  padding: 15px;
+  width: 100%;
+  border-bottom: 1px solid var(--darkGrey);
+  box-sizing: border-box;
+}
+
+.toRight {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: flex-end;
+  width: 100%;
+}

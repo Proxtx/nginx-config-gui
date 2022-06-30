@@ -1,0 +1,25 @@
+{
+  "name": "nginx-config-gui",
+  "version": "1.0.0",
+  "description": "This is a Web-Interface for nginx. However: I will only use this to create subdomains for my services.",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Proxtx/nginx-config-gui.git"
+  },
+  "author": "Proxtx",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Proxtx/nginx-config-gui/issues"
+  },
+  "homepage": "https://github.com/Proxtx/nginx-config-gui#readme",
+  "dependencies": {
+    "@proxtx/config": "^1.0.2",
+    "@proxtx/framework": "^1.4.3",
+    "@proxtx/material": "^1.0.865"
+  }
+}
