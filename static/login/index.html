@@ -16,9 +16,14 @@
     </div>
     <div class="contentWrap">
       <m-text><h1>Login</h1></m-text>
-      <m-text-input placeholder="Password" password="true"></m-text-input
-      ><m-button>Login</m-button>
+      <m-text-input
+        placeholder="Password"
+        password="true"
+        id="input"
+      ></m-text-input
+      ><m-button onclick="window.login()">Login</m-button>
     </div>
     <script src="/lib/guiLoader.js" type="module"></script>
+    <script src="main.js" type="module"></script>
   </body>
 </html>
