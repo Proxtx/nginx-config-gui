@@ -68,6 +68,7 @@ body {
   width: 100%;
   border-bottom: 1px solid var(--darkGrey);
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .toRight {
@@ -76,4 +77,9 @@ body {
   gap: 10px;
   justify-content: flex-end;
   width: 100%;
+}
+
+m-text-input {
+  display: inline-block;
+  margin: 7px;
 }

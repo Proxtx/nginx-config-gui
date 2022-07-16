@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Edit Config</title>
+    <title>Login</title>
     <link rel="stylesheet" href="/lib/main.css" />
   </head>
   <body>
@@ -15,18 +15,10 @@
       </div>
     </div>
     <div class="contentWrap">
-      <div>
-        <a id="name"></a>
-        <m-divider></m-divider>
-      </div>
-      <div id="inputWrap"></div>
-      <div class="toRight">
-        <m-button type="outlined" onclick="window.deleteBlock()"
-          >Delete</m-button
-        ><m-button onclick="window.saveBlock()">Save Changes</m-button>
-      </div>
+      <m-text><h1>Login</h1></m-text>
+      <m-text-input placeholder="Password" password="true"></m-text-input
+      ><m-button>Login</m-button>
     </div>
     <script src="/lib/guiLoader.js" type="module"></script>
-    <script src="main.js" type="module"></script>
   </body>
 </html>

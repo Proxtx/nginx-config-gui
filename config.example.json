@@ -1,0 +1,17 @@
+{
+  "port": 3000,
+  "pwd": "1234",
+  "replace": [
+    {
+      "name": "Subdomain",
+      "replace": "$subDomain"
+    },
+    {
+      "name": "Proxy Pass",
+      "default": "http://localhost:",
+      "replace": "$proxy_pass"
+    }
+  ],
+  "resultFile": "/etc/nginx/sites-available/default",
+  "restartNginx": "service nginx restart"
+}

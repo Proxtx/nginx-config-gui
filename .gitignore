@@ -105,3 +105,6 @@ dist
 
 config.json
 nginxConfig.json
+block.txt
+defaultFile.txt
+blocks.json
