@@ -25,6 +25,10 @@ export const saveConfigFile = async (pwd) => {
   let finalConfigFile = defaultFile.replace("$customBlocks", finalBlocksConfig);
   await saveTextFile(config.resultFile, finalConfigFile);
 
+  reloadNginx();
+};
+
+const reloadNginx = () => {
   exec(
     config.restartNginx,
     (error) => {
@@ -76,6 +80,7 @@ export const deleteBlock = async (pwd, name) => {
   }
 
   await saveBlocks(blocks);
+  reloadNginx();
 };
 
 export const listBlocks = async (pwd) => {
