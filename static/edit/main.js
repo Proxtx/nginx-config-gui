@@ -56,6 +56,11 @@ const deleteBlock = async () => {
   location.pathname += "../";
 };
 
+window.goBack = async () => {
+  await new Promise((r) => setTimeout(r, 500));
+  location.pathname += "../";
+};
+
 window.deleteBlock = deleteBlock;
 
 const saveBlock = async () => {
