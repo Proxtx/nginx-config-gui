@@ -53,6 +53,7 @@ for (let attribute of attributes) {
 const deleteBlock = async () => {
   await new Promise((r) => setTimeout(r, 500));
   await config.deleteBlock(cookie.pwd, cookie.name);
+  await config.saveConfigFile(cookie.pwd);
   location.pathname += "../";
 };
 
