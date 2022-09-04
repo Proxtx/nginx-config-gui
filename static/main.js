@@ -32,3 +32,9 @@ const createNew = async () => {
 };
 
 window.createNew = createNew;
+
+window.logout = async () => {
+  await new Promise((r) => setTimeout(r, 500));
+  cookie.pwd = "";
+  location.href = location.href;
+};
