@@ -1,6 +1,14 @@
 # nginx-config-gui
 This is a Web-Interface to configure nginx. 
 
+# videodemo
+https://www.reddit.com/r/selfhosted/comments/y71ktz/small_project_i_created_a_web_gui_to_configure/
+Post about the project with video
+
+# quick setup
+If you just want to manage subdomains with proxy_passes:
+Follow the setup but you can skip step 10,11 and 12. In step 2 you only need to update example.de to your own domain. Same goes for step 4.
+
 # setup
 1. copy block.exmaple.txt to block.txt
 2. in block.txt change the configuration to match your standardized server-block. Replace everything that should be changeable via the gui with a "$<name>" for example "$subDomain"
